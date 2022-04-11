@@ -40,12 +40,17 @@
             </li>
           </ul>
 
-          <form class="search header__search" action="/" method="get">
+          <form class="search header__search">
             <label class="search__label" for="search"></label>
             <input class="search__input" type="search" name="search" id="search" placeholder="Поиск...">
-            <input class="search__submit" type="submit">
+            <button class="search__submit" type="submit">
+              <svg class="icon" id="search-icon" width="14" height="14">
+                <use xlink:href="assets/img/svg/sprite.svg#search"></use>
+              </svg>
+            </button>
           </form>
 
+        </div>
         </div>
     </nav>
 
