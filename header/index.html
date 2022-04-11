@@ -11,9 +11,9 @@
 
 <body>
   <header class="header">
-    <div class="container">
-      <nav class="header__nav">
 
+    <nav class="header__nav header__nav_dark">
+    <div class="container">
         <div class="header__nav-menu header__nav-menu_main">
 
           <select class="header__language-select" name="language" id="language">
@@ -35,8 +35,11 @@
           </form>
 
         </div>
+    </nav>
 
-        <div class="header__nav-menu header__nav-menu_submenu">
+    <nav class="header__nav header__nav_light">
+      <div class="container">
+        <div class="header__nav-menu header__nav-menu_bottom">
 
           <a class="header__logo-link" href="index.html">
             <img src="assets/img/svg/logo.svg" alt="Intelion's logotype">
@@ -70,15 +73,73 @@
 
         </div>
 
+        </div>
+      </div>
       </nav>      
 
+    <!-- Tablet menu -->
+    <nav class="header__nav-adaptive header__nav-adaptive_tablet">
+      <div class="menu-container top">
+        <h2 class="header__nav-title header__nav-title-tablet">Меню</h2>
+        <div class="select-wrap_adaptive">
+          <select class="header__language-select" name="language" id="language">
+            <option class="header__language-option" value="ru" selected="">Ru</option>
+            <option class="header__language-option" value="en">En</option>
+          </select>
+          <svg class="icon" width="5" height="5" id="arrow-down">
+            <use xlink:href="assets/img/svg/sprite.svg#dropdown-arrow-down"></use>
+          </svg>
+        </div>
+        <form class="search header__search">
+          <label class="search__label" for="search"></label>
+          <input class="search__input" type="search" name="search" id="search" placeholder="Поиск...">
+          <button class="search__submit" type="submit">
+            <svg class="icon" id="search-icon" width="24" height="24">
+              <use xlink:href="assets/img/svg/sprite.svg#search"></use>
+            </svg>
+          </button>
+        </form>
     </div>
-
-    <div class="header__burger burger">
-      <span class="burger__line burger__line_first"></span>
-      <span class="burger__line burger__line_second"></span>
-      <span class="burger__line burger__line_third"></span>
+      <div class="menu-container list">
+        <ul class="header__nav-list_adaptive">
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link_adaptive">Каталог</a>
+          </li>
+          <li class="header__nav-item dropdown">
+            <a href="#" class="header__nav-link_adaptive">Майнинг отель</a>
+            <svg class="icon" id="arrow-down-adaptive">
+              <use xlink:href="#dropdown-arrow-down"></use>
+            </svg>
+            <ul class="header__nav-list header__nav-list_dropdown">
+              <li class="header__nav-item header__nav-item_dropdown">
+                <a href="#" class="header__nav-link_adaptive header__nav-link_dropdown">Калининская АЭС</a>
+              </li>
+              <li class="header__nav-item header__nav-item_dropdown">
+                <a href="#" class="header__nav-link_adaptive header__nav-link_dropdown">ПАО «Тулачермет»</a>
+              </li>
+            </ul>
+          </li>
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link_adaptive">Лизинг</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link_adaptive">О компании</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link_adaptive">Новости и блог</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link_adaptive">Оплата и доставка</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link_adaptive">Контакты</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link_adaptive">Вакансии</a>
+          </li>
+        </ul>
     </div>
+    </nav>
 
   </header>
   <script src="script.js"></script>
