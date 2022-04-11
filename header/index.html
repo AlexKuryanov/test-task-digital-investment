@@ -15,11 +15,15 @@
     <nav class="header__nav header__nav_dark">
     <div class="container">
         <div class="header__nav-menu header__nav-menu_main">
-
+          <div class="select-wrap">
           <select class="header__language-select" name="language" id="language">
-            <option class="header__language-option" value="ru">Ru</option>
+              <option class="header__language-option" value="ru" selected>Ru</option>
             <option class="header__language-option" value="en">En</option>
           </select>
+            <svg class="icon" width="5" height="5" id="dropdown-arrow-down">
+              <use xlink:href="assets/img/svg/sprite.svg#dropdown-arrow-down"></use>
+            </svg>
+          </div>
 
           <ul class="header__nav-list header__nav-list_top">
             <li class="header__nav-item header__nav-item_top"><a href="#" class="header__nav-link header__nav-link_top">Новости и блог</a></li>
